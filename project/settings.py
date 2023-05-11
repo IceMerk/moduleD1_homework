@@ -38,6 +38,8 @@ INSTALLED_APPS = [
 
     'django.contrib.sites',
     'django.contrib.flatpages',
+
+    'fpages',
 ]
 
 SITE_ID = 1
@@ -70,6 +72,10 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
 ]
 
 WSGI_APPLICATION = 'project.wsgi.application'
